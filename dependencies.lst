@@ -1,0 +1,93 @@
+# --------------------------------------------------- // System
+pipewire                                               # audio/video server
+pipewire-alsa                                          # pipewire alsa client
+pipewire-audio                                         # pipewire audio client
+pipewire-jack                                          # pipewire jack client
+pipewire-pulse                                         # pipewire pulseaudio client
+gst-plugin-pipewire                                    # pipewire gstreamer client
+wireplumber                                            # pipewire session manager
+pavucontrol                                            # pulseaudio volume control
+pamixer                                                # pulseaudio cli mixer
+networkmanager                                         # network manager
+network-manager-applet                                 # network manager system tray utility
+bluez                                                  # bluetooth protocol stack
+bluez-utils                                            # bluetooth utility cli
+brightnessctl                                          # screen brightness control
+udiskie                                                # manage removable media
+
+# --------------------------------------------------- // Display Manager
+sddm                                                   # display manager for KDE plasma
+qt5-quickcontrols                                      # for sddm theme ui elements
+qt5-quickcontrols2                                     # for sddm theme ui elements
+qt5-graphicaleffects                                   # for sddm theme effects
+
+# --------------------------------------------------- // Window Manager
+hyprland                                               # wlroots-based wayland compositor
+hypridle                                               # ligthweight idle daemon for hyprland
+rofi-wayland                                           # application launcher
+swww                                                   # wallpaper
+hyprlock                                               # lock screen
+grimblast-git                                          # screenshot tool
+hyprpicker                                             # color picker
+slurp                                                  # region select for screenshot/screenshare
+swappy                                                 # screenshot editor
+cliphist                                               # clipboard manager
+ags-hyprpanel-git                                      # best bar for hyprland
+
+# --------------------------------------------------- // Dependencies
+polkit-gnome                                           # authentication agent
+xdg-desktop-portal-hyprland                            # xdg desktop portal for hyprland
+pacman-contrib                                         # for system update check
+python-pyamdgpuinfo                                    # for amd gpu info
+parallel                                               # for parallel processing
+jq                                                     # for json processing
+imagemagick                                            # for image processing
+qt5-imageformats                                       # for dolphin image thumbnails
+ffmpegthumbs                                           # for dolphin video thumbnails
+kde-cli-tools                                          # for dolphin file type defaults
+libnotify                                              # for notifications
+
+# --------------------------------------------------- // Theming
+apple_cursor                                           # Just a simple cursor theme
+nwg-look                                               # gtk configuration tool
+qt5ct                                                  # qt5 configuration tool
+qt6ct                                                  # qt6 configuration tool
+kvantum                                                # svg based qt6 theme engine
+kvantum-qt5                                            # svg based qt5 theme engine
+qt5-wayland                                            # wayland support in qt5
+qt6-wayland                                            # wayland support in qt6
+
+# --------------------------------------------------- // Applications
+zen-browser-avx2-bin                                   # browser
+ghostty                                                # terminal
+dolphin                                                # kde file manager
+ark                                                    # kde file archiver
+vim                                                    # terminal text editor
+neovim                                                 # terminal text editor
+visual-studio-code-bin                                 # ide text editor
+
+# --------------------------------------------------- // Shell
+eza                                                    # file lister for zsh
+nushell                                                # a new type of shell where all data is structured
+starship                                               # customizable shell prompt
+fastfetch                                              # system information fetch tool
+
+# --------------------------------------------------- // Custom apps
+cava                                                   # audio visualizer
+trash-cli                                              # allow putting files to trash
+github-cli                                             # allows you to managa your github account in the terminal
+git                                                    # the best versioning tool ever !!!!
+gnome-keyring                                          # manage all your app secrets in one app
+flatpak                                                # software on generic linux
+gnome-software                                         # the best store for apps
+mission-center                                         # System monitoring tool
+easyeffects                                            # the best equalizer app for linux
+kdeconnect                                             # brings interconnectiviy to linux
+mattermost-desktop                                     # the proffesional messaging platform
+freedownloadmanager                                    # the best download manager on linux
+vesktop-bin                                            # unnoficial discord client
+
+# --------------------------------------------------- // Personal additions
+# If you do not use this module, please remove .config/pipewire/pipewire.conf.d/99-input-denoising.conf
+# otherwise pipewire will fail to start by trying to load this module
+noise-suppression-for-voice                            # noise suppression for your mic !!!!

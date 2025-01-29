@@ -1,0 +1,135 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "theme.font.name": "JetBrainsMono Nerd Font",
+  "theme.font.label": "JetBrainsMono Nerd Font",
+  "theme.font.weight": 500,
+  "theme.font.size": "0.9rem",
+  "menus.transition": "crossfade",
+  "theme.bar.floating": true,
+  "bar.autoHide": "never",
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.border.width": "0.1em",
+  "theme.bar.outer_spacing": "0.4em",
+  "theme.bar.margin_sides": "0.5em",
+  "bar.launcher.autoDetectIcon": false,
+  "theme.bar.buttons.dashboard.enableBorder": true,
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.showWsIcons": true,
+  "bar.network.showWifiInfo": true,
+  "menus.media.displayTime": true,
+  "menus.media.displayTimeTooltip": true,
+  "menus.clock.weather.location": "Antananarivo",
+  "menus.clock.weather.unit": "metric",
+  "menus.clock.time.hideSeconds": true,
+  "bar.clock.format": " %I:%M %p",
+  "menus.dashboard.powermenu.avatar.image": "/home/kirisaki_vk/Pictures/ProfilePic/profile_pic_win.jpg",
+  "menus.dashboard.stats.enable_gpu": true,
+  "menus.dashboard.stats.interval": 3000,
+  "menus.dashboard.shortcuts.left.shortcut1.command": "zen-browser",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Zen Browser",
+  "menus.dashboard.shortcuts.left.shortcut3.command": "vesktop",
+  "theme.matugen": false,
+  "theme.bar.menus.monochrome": false,
+  "wallpaper.image": "",
+  "theme.bar.transparent": true,
+  "theme.bar.opacity": 100,
+  "theme.bar.buttons.style": "default",
+  "wallpaper.pywal": true,
+  "theme.bar.margin_top": "0.5em",
+  "bar.notifications.show_total": true,
+  "menus.clock.weather.key": "b91f675c97d4430d8d4134736250901",
+  "theme.bar.menus.popover.scaling": 60,
+  "scalingPriority": "gdk",
+  "bar.workspaces.numbered_active_indicator": "highlight",
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.layouts": {
+    "*": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "windowtitle",
+        "media",
+        "cava",
+        "cpu",
+        "ram"
+      ],
+      "middle": [
+        "clock",
+        "weather"
+      ],
+      "right": [
+        "volume",
+        "network",
+        "bluetooth",
+        "kbinput",
+        "battery",
+        "systray",
+        "notifications",
+        "power"
+      ]
+    }
+  },
+  "bar.customModules.weather.unit": "metric",
+  "bar.customModules.cava.showIcon": true,
+  "bar.customModules.cava.stereo": true,
+  "theme.bar.buttons.modules.power.enableBorder": true,
+  "theme.bar.buttons.modules.power.spacing": "0em",
+  "theme.bar.buttons.volume.icon_background": "#242438",
+  "theme.bar.buttons.volume.icon": "#eba0ac",
+  "bar.customModules.cava.icon": "",
+  "theme.bar.buttons.modules.cava.spacing": "0em",
+  "bar.customModules.cava.showActiveOnly": true,
+  "theme.matugen_settings.variation": "standard_1",
+  "theme.matugen_settings.scheme_type": "tonal-spot",
+  "theme.bar.buttons.y_margins": "0.2em",
+  "theme.bar.buttons.spacing": "0.20em",
+  "theme.bar.buttons.padding_x": "0.8rem",
+  "theme.bar.buttons.radius": "0.5em",
+  "bar.windowtitle.class_name": true,
+  "bar.volume.rightClick": "pamixer -t",
+  "bar.network.label": true,
+  "bar.bluetooth.label": false,
+  "bar.battery.hideLabelWhenFull": true,
+  "theme.osd.enable": false,
+  "bar.windowtitle.title_map": [
+    [
+      "zen-beta",
+      "",
+      "Zen browser"
+    ],
+    [
+      "com.mitchellh.ghostty",
+      "󰊠",
+      "Ghostty"
+    ],
+    [
+      "gjs",
+      "󰬏",
+      "Hyprpanel"
+    ],
+    [
+      "jetbrains-idea",
+      "",
+      "IntelliJ Idea"
+    ],
+    [
+      "octopi",
+      "󰊠",
+      "Octopi"
+    ]
+  ],
+  "bar.workspaces.workspaceIconMap": {
+    "1": "一",
+    "2": "二",
+    "3": "三",
+    "4": "四",
+    "5": "五",
+    "6": "六",
+    "7": "七",
+    "8": "八",
+    "9": "九",
+    "10": "十"
+  },
+  "bar.network.truncation": false
+}

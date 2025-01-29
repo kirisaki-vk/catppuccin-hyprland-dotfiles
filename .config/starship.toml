@@ -1,0 +1,215 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = """
+[](maroon)\
+$shell\
+[ ](fg:maroon)\
+[](mauve)\
+$username\
+$sudo\
+[](bg:peach fg:mauve)\
+$directory\
+[](fg:peach bg:blue)\
+$git_branch\
+$git_status\
+[](fg:blue bg:green)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+[](fg:green bg:pink)\
+$docker_context\
+$conda\
+[ ](fg:pink)\
+[](fg:red)\
+$time\
+[](fg:red) \
+$direnv\
+\
+$line_break$character"""
+
+
+palette = 'catppuccin_mocha'
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
+
+[os]
+disabled = false
+style = "bg:maroon fg:base"
+format = "[on $symbol ](fg:base bg:maroon)"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = " "
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bg:mauve fg:base"
+style_root = "bg:mauve fg:red"
+format = '[󰀄 $user ]($style)'
+
+[directory]
+style = "fg:base bg:peach"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"IdeaProjects" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:blue"
+format = '[[ $symbol $branch ](fg:base bg:blue)]($style)'
+
+[git_status]
+style = "bg:blue"
+format = '[[($all_status$ahead_behind )](fg:base bg:blue)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[c]
+symbol = " "
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[php]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[java]
+symbol = " "
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[python]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](fg:base bg:green)]($style)'
+
+[docker_context]
+symbol = ""
+style = "bg:pink"
+format = '[[ $symbol( $context) ](fg:base bg:pink)]($style)'
+
+[conda]
+style = "bg:pink"
+format = '[[ $symbol( $environment) ](fg:base bg:pink)]($style)'
+
+[time]
+disabled = false
+time_format = "%I:%M %p"
+style = "bg:red"
+format = '[[  $time ](fg:base bg:red)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:green)'
+error_symbol = '[](bold fg:red)'
+vimcmd_symbol = '[](bold fg:green)'
+vimcmd_replace_one_symbol = '[](bold fg:purple)'
+vimcmd_replace_symbol = '[](bold fg:purple)'
+vimcmd_visual_symbol = '[](bold fg:peach)'
+
+[shell]
+fish_indicator = ' '
+bash_indicator = ' '
+zsh_indicator = 'zsh'
+nu_indicator = ' '
+format = '[[ $indicator ](fg:base bg:maroon)]($style)'
+powershell_indicator = '_'
+unknown_indicator = '$?'
+style = 'cyan bold'
+disabled = false
+
+[sudo]
+disabled = false
+format = "[[as $symbol](fg:base bg:mauve)]($style)"
+symbol = "# "
+
+[direnv]
+disabled = false
+symbol = " "
+format ="[](fg:yellow)[$symbol$loaded/$allowed]($style)[](fg:yellow)"
+style = "bg:yellow fg:base"
