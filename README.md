@@ -20,4 +20,4 @@ $ cp -r .config ~/
 
 Catppuccin theme installation instaruction will come soon ...
 
-all screenshoots will be found at the [screenshot folder](screenshots/)
+All screenshoots will be found at the [screenshot folder](screenshots/)
