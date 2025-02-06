@@ -18,6 +18,6 @@ $ cp -r .config ~/
 ```
 >❗**WARNING**❗: Doing so will overwrite your old config so always do a backup of your config directory before doing anything
 
-Catppuccin theme installation instaruction will come soon ...
+Catppuccin theme installation instruction will come soon ...
 
 All screenshoots will be found at the [screenshot folder](screenshots/)
